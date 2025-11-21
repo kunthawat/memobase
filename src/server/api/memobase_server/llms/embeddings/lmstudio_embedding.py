@@ -19,8 +19,6 @@ async def lmstudio_embedding(
             "model": model,
             "input": texts,
             "task": LMSTUDIO_TASK[phase],
-            "truncate": True,
-            "dimensions": CONFIG.embedding_dim,
         },
         timeout=20,
     )
